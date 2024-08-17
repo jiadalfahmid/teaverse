@@ -4,23 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teaverse</title>
+  <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
-  <link rel="shortcut icon" href="./images/cup.png" type="image/x-icon">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <!-- google fonts cdn -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- tailwind cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         fontFamily: {
-          Manrope: ['Manrope', 'sans-serif'],
+          manrope: ['Manrope', 'sans-serif'],
         },
       }
     }
   </script>
+  <style>
+    .manrope{
+      font-family: 'Manrope', 'sans-serif';
+    }
+  </style>
 </head>
-<body>
-  
+<body class="manrope">
+  <header class="w-full bg-amber-50">
+    <!-- nav section -->
+    <nav class="flex justify-between w-11/12 lg:w-4/5 items-center mx-auto py-5">
+      <div class="flex items-center">
+        <img class="w-14 md:w-20" src="./images/logo.png" alt="">
+        <h3 class="text-3xl font-extrabold md:text-5xl">Teaverse</h3>
+      </div>
+      <ul class="max-sm:hidden flex md:flex gap-4 lg:gap-8">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Order Now</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Reviews</a></li>
+      </ul>
+      <div class="md:hidden"><i class="fa-regular fa-bars"></i></div>
+    </nav>
+    <!-- banner section -->
+  </header>
 </body>
 </html>
